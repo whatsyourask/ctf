@@ -20,4 +20,6 @@ Just try a passphrase 'myadmin':
 
 ![extract](screenshots/extract.png)
 
+![get flag](screenshots/get_flag.png)
+
 ![flag](screenshots/result.png)
