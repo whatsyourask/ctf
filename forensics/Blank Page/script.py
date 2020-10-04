@@ -4,5 +4,5 @@ filename = 'TheMessage.txt'
 data = open(filename, 'r').read()
 decoded = ''
 for char in data:
-    decoded += '1' if char == ' ' else '0'
+    decoded += '0' if char == ' ' else '1'
 print(decoded)
