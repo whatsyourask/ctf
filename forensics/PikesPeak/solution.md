@@ -1,1 +1,1 @@
-(as in that challenge)(Snowboard/solution.md)
+[as in that challenge](Snowboard/solution.md)
