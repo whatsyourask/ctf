@@ -1,6 +1,6 @@
 ![exiftool](screenshots/exiftool.png)
 
-Base64 encoded comment gives a hint.XOR. But what?
+Base64 encoded comment gives a hint. XOR. But what?
 
 I did again `strings -n 16` and got a 3 encoded strings. First of them was above.
 
