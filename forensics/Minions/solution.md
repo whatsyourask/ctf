@@ -14,4 +14,4 @@ Download this file. Then just again `binwalk`.
 
 ![decode](screenshots/decode.png)
 
-To get a flag you need to decode it a few times yet.
+To get a flag you need to decode it several times.
