@@ -1,8 +1,23 @@
-![Challenge](https://github.com/whatsyourask/CTFlearn/blob/main/forensics/Simple%20Steganography/challenge.png)
+![Challenge](screenshots/challenge.png)
 
 man steghide:
 
-![man steghide](https://github.com/whatsyourask/CTFlearn/blob/main/forensics/Simple%20Steganography/man_steghide.png)
+![man steghide](screenshots/man_steghide.png)
 
 Need a passphrase:
-![steghide info](https://github.com/whatsyourask/CTFlearn/blob/main/forensics/Simple%20Steganography/steghide_info.png)
+
+![steghide info](screenshots/steghide_info.png)
+
+Then i used a `strings` on that file:
+
+![strings](screenshots/strings.png)
+
+Then i used a `exiftool` to look at metadata:
+
+![exiftool](screenshots/exiftool.png)
+
+Just try a passphrase 'myadmin':
+
+![extract](screenshots/extract.png)
+
+![flag](screenshots/result.png)
