@@ -8,15 +8,7 @@ The shellcode is ready and we see that we have enough space for it(shellcode has
 
 ![enough](screenshots/enough.png)
 
-NOP(no operation) chain
-
-+
-
-38 bytes
-
-+
-
-4 bytes address of that shellcode in the stack
+NOP(no operation) chain + 38 bytes of shellcode + 4 bytes address of that shellcode in the stack
 
 There are 8x8 bytes or 64 bytes. So we have next payload:
 `"\x90" * 22 + shellcode + [address]`
