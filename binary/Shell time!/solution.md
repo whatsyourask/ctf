@@ -1,4 +1,4 @@
-![description](screenshots/description)
+![description](screenshots/description.png)
 
 From the description we see that we need to write a shellcode.
 
@@ -6,7 +6,7 @@ From the description we see that we need to write a shellcode.
 
 The shellcode is ready and we see that we have enough space for it(shellcode has a 38 bytes length).
 
-![enough](shellcode/enough.png)
+![enough](screenshots/enough.png)
 
 NOP(no operation) chain
 
