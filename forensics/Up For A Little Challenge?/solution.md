@@ -8,7 +8,7 @@ Download another file:
 
 Also in the first file we can see:
 
-![pass](screenshots/pass?.png)
+![pass](screenshots/pass.png)
 
 Unzip with the pass:
 
