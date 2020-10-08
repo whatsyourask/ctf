@@ -16,3 +16,5 @@ There are 8x8 bytes or 64 bytes. So we have next payload:
 It remains for us to find out the current address in the stack of our NOP chain
 
 [exploit](exploit.py)
+
+But in this challenge maybe shellcode doesn't work at all.
