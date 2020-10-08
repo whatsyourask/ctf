@@ -8,7 +8,7 @@ Go through directories:
 
 ![cd ls](screenshots/cd_ls.png)
 
-Grap the flag:
+Grab the flag:
 
 ![flag](screenshots/flag.png)
 
