@@ -4,4 +4,4 @@ In Parser.java:
 
 ![weird](screenshots/weird.png)
 
-I just decided that it may be a flag and try [script](get_flag.py) and i got this.
+I just decided that it may be a flag and tried [script](get_flag.py) and i got this.
