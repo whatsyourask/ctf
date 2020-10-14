@@ -16,4 +16,8 @@ Now, we have 2 options. First - just overflow the buffer and set return address 
 
 ![overflow](screenshots/overflow.png)
 
-![complete the condition](screenshots/condition.png)
+![cond1](screenshots/condition1.png)
+
+Our As offset is 15 bytes because in 20 bytes on esp + 0x2c we can only see 15 bytes out of 30 bytes.
+
+![cond2](screenshots/condition2.png)
