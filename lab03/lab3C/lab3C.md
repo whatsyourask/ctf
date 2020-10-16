@@ -36,3 +36,5 @@ So i walk through the source code and there is a a_user_name buffer with 100 byt
 Now just put all together and get the shell:
 
 ![shell](screenshots/shell.png)
+
+[Possible exploit](exploit.py)
