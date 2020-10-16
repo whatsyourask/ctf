@@ -1,4 +1,4 @@
-# Solution of lab2C
+# Solution of lab2A
 
 I couldn't do it without source code, so i look at this:
 
