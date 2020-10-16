@@ -1,3 +1,5 @@
+# Solution of lab2C
+
 Try to type a lot of As and get segmentation fault to check if there is a buffer overflow:
 
 ![seg_fault](screenshots/seg_fault.png)

@@ -1,3 +1,5 @@
+# Solution of lab2B
+
 Just like in lab02C i did the buffer overflow and got the segmentation fault:
 
 ![segmentation fault](screenshots/seg_fault.png)

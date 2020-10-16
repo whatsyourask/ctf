@@ -1,3 +1,5 @@
+# Solution of lab2C
+
 I couldn't do it without source code, so i look at this:
 
 ![source](screenshots/source.png)
