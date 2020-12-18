@@ -2,10 +2,9 @@ from pwn import *
 
 
 # Connect to your target server with this function
-s = ssh('your_login', '<server name>', password='<your_pass_in_canvas')
-
-payload = shellcraft.sh()
+s = ssh('user', '192.168.88.232', password='user')
+payload = 'HELLO'
 # Invoke a process in the target
-p = process('./crackme0x00', cmd='/home/lab01/lol')
+p = s.process('./crackme0x00', cwd='/home/user/tut01-crackme')
 p.sendline(payload)
 p.interactive()
