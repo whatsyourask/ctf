@@ -1,0 +1,21 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirs
+START_TIME: Sat Jan  9 05:51:54 2021
+URL_BASE: http://192.168.88.226:5000/
+WORDLIST_FILES: /usr/share/wordlists/dirb/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://192.168.88.226:5000/ ----
++ http://192.168.88.226:5000/console (CODE:200|SIZE:1985)
+
+-----------------
+END_TIME: Sat Jan  9 05:53:44 2021
+DOWNLOADED: 20458 - FOUND: 1
