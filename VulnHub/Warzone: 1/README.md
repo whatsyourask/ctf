@@ -227,3 +227,22 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 stty raw -echo
 f + g + Enter
 ```
+
+## Sources:
+
+### jjs
+
+[wiki]("https://en.wikipedia.org/wiki/Nashorn_(JavaScript_engine)")
+[shebang](https://docs.oracle.com/javase/8/docs/technotes/guides/scripting/nashorn/shell.html "https://docs.oracle.com/javase/8/docs/technotes/guides/scripting/nashorn/shell.html")
+[doc about jjs](https://docs.oracle.com/en/java/javase/11/tools/jjs.html "https://docs.oracle.com/en/java/javase/11/tools/jjs.html")
+
+### jar
+
+[packages](https://www.tutorialspoint.com/java/java_packages.htm "https://www.tutorialspoint.com/java/java_packages.htm")
+[jar](https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html "https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html")
+[manifest](https://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html "https://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html")
+
+### reverse shell recall
+
+[pentest monkey](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet "http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet")
+
