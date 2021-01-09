@@ -76,14 +76,30 @@ From `dirb` we got a path /console.
 
 But we need a PIN that shows on server side...
 
-## Thread modelling
+## Threat modelling
 
-Okay. We have a java source code of encryption, we have a wierd decrypted message with words "credentials" and "auth". So it is difinitely what we need. 
+Okay. We have a java source code of encryption, we have a wierd decrypted message with words "credentials" and "auth". So it is difinitely what we need. Another general thing is services versions! Maybe we will have a CVE on it.
 
 ## Vulnerability analysis
 
-One main vulnerability here is comment within page source, i think, which leads right to credentials leakage. I thought for a long time what to do with decrypted message. But in the end i found a way. It is a url `http://192.168.88.226:5000/get/auth/credentials`. There you will get a credentials, they are encrypted.
+### vsftd version:
+
+Not vulnerable.
+
+### ssh version:
+
+Vulnerable, but need to be authenticated.
+
+### Werkzeug version:
+
+Vulnerable.
+
+### Credentials leakage:
+
+One main vulnerability here is comment within page source, i think, which leads right to credentials leakage. I thought for a long time what to do with decrypted message. But in the end i found a way. It is a url `http://192.168.88.226:5000/get/auth/credentials`. There you will get credentials, they are encrypted.
 
 ## Exploitation
+
+
 
 ## Post exploitation
