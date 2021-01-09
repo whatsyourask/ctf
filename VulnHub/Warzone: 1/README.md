@@ -129,7 +129,6 @@ To create jar:
 jar cmvf warzone-decrypt.jar crypto/AES.class Other/Obfuscated.class decrypt/Main.class --manifest=META-INF/MANIFEST.MF
 ```
 
-
-### Decription
+###
 
 ## Post exploitation
