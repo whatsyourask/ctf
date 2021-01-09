@@ -92,7 +92,7 @@ Vulnerable, but need to be authenticated.
 
 ### Werkzeug version:
 
-Vulnerable.
+Vulnerable. For me it doesn't work (`/usr/share/exploitdb/exploits/multiple/remote/43905.py`).
 
 ### Credentials leakage:
 
@@ -100,6 +100,36 @@ One main vulnerability here is comment within page source, i think, which leads 
 
 ## Exploitation
 
+### Decryption tool creating:
 
+I decide to write decryption tool in jar format such as `warzone-encrypt.jar`.
+
+So, i copied AES, Obfuscated classes from decompiler, and fixed the Main class a little.
+
+[code here](decryption)
+ 
+Also i understood about java packages, how to compile java code and how to create jar files.
+
+To create .class file from .java:
+```
+javac source.java
+```
+To create package with .class from .java:
+```
+javac -d . source.java
+```
+To create jar file we need a manifest in which need to specify main class:
+```
+Manifest-Version: 1.0
+Main-Class: decrypt.Main
+Class-Path: .
+```
+To create jar:
+```
+jar cmvf warzone-decrypt.jar crypto/AES.class Other/Obfuscated.class decrypt/Main.class --manifest=META-INF/MANIFEST.MF
+```
+
+
+### Decription
 
 ## Post exploitation
