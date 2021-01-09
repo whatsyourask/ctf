@@ -228,18 +228,22 @@ stty raw -echo
 f + g + Enter
 ```
 
-## Sources:
+## Sources
 
 ### jjs
 
-[wiki]("https://en.wikipedia.org/wiki/Nashorn_(JavaScript_engine)")
+[wiki](https://en.wikipedia.org/wiki/Nashorn_%29JavaScript_engine%29)
+
 [shebang](https://docs.oracle.com/javase/8/docs/technotes/guides/scripting/nashorn/shell.html "https://docs.oracle.com/javase/8/docs/technotes/guides/scripting/nashorn/shell.html")
+
 [doc about jjs](https://docs.oracle.com/en/java/javase/11/tools/jjs.html "https://docs.oracle.com/en/java/javase/11/tools/jjs.html")
 
 ### jar
 
 [packages](https://www.tutorialspoint.com/java/java_packages.htm "https://www.tutorialspoint.com/java/java_packages.htm")
+
 [jar](https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html "https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html")
+
 [manifest](https://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html "https://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html")
 
 ### reverse shell recall
