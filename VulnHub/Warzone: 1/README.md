@@ -232,7 +232,7 @@ f + g + Enter
 
 ### jjs
 
-[wiki](https://en.wikipedia.org/wiki/Nashorn_%29JavaScript_engine%29)
+[wiki](https://en.wikipedia.org/wiki/Nashorn_%28JavaScript_engine%29)
 
 [shebang](https://docs.oracle.com/javase/8/docs/technotes/guides/scripting/nashorn/shell.html "https://docs.oracle.com/javase/8/docs/technotes/guides/scripting/nashorn/shell.html")
 
