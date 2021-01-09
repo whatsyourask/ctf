@@ -26,3 +26,7 @@ challenges: [pwnable.kr](http://pwnable.kr/)
   * [x] [unlink](unlink)
   * [x] [blukat](blukat)
   * [x] [horcruxes](horcruxes)
+
+## [Rookiss]
+  * [ ] [brain fuck](brain fuck)
+
