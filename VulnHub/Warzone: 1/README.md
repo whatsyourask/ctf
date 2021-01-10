@@ -58,7 +58,7 @@ Nothing interesting there, but in page source you can see next:
 ```
 <!--GA DIE UHCEETASTTRNL-->
 ```
-From main page, we see that it can be some cipher. [cipher identifier tool](https://www.boxentriq.com/code-breaking/cipher-identifier#railfence-cipher "https://www.boxentriq.com/code-breaking/cipher-identifier#railfence-cipher")
+From the main page, we see that it can be some cipher. [cipher identifier tool](https://www.boxentriq.com/code-breaking/cipher-identifier#railfence-cipher "https://www.boxentriq.com/code-breaking/cipher-identifier#railfence-cipher")
 
 It is a `Railfence Cipher`. Decrypted:
 ```
@@ -76,7 +76,7 @@ From `dirb` we got a path /console.
 
 But we need a PIN that shows on server side...
 
-## Threat modelling
+## Threat modeling
 
 Okay. We have a java source code of encryption, we have a weird decrypted message with the words "credentials" and "auth". So it is definitely what we need. Another general thing is services versions! Maybe we will have a CVE on it.
 
@@ -92,23 +92,23 @@ Vulnerable, but need to be authenticated.
 
 ### Werkzeug version:
 
-Vulnerable. For me it doesn't work (`/usr/share/exploitdb/exploits/multiple/remote/43905.py`).
+Vulnerable. For me, it doesn't work (`/usr/share/exploitdb/exploits/multiple/remote/43905.py`).
 
 ### Credentials leakage:
 
-The first vulnerability here is the comment within page source, i think, which leads right to credentials leakage. The second vulnerability is misconfiguration of ftp server which allows us to anonymously login and download files. I thought for a long time what to do with decrypted message. But in the end, i found a way. It is a url `http://192.168.88.226:5000/get/auth/credentials`. There you will get credentials, they are encrypted.
+The first vulnerability here is the comment within page source, i think, which leads right to credentials leakage. The second vulnerability is the misconfiguration of ftp server which allows us to anonymously login and download files. I thought for a long time what to do with the decrypted message. But in the end, i found a way. It is a url `http://192.168.88.226:5000/get/auth/credentials`. There you will get credentials, they are encrypted.
 
 ## Exploitation
 
 ### Decryption tool creating:
 
-I decide to write decryption tool in jar format such as `warzone-encrypt.jar`.
+I decide to write a decryption tool in jar format such as `warzone-encrypt.jar`.
 
 So, i copied AES, Obfuscated classes from decompiler, and fixed the Main class a little.
 
 [code here](decryption)
  
-Also, i understood about java packages, how to compile java code and how to create jar files.
+Also, i understood java packages, how to compile java code, and how to create jar files.
 
 To create .class file from .java:
 ```
@@ -131,7 +131,7 @@ jar cmvf warzone-decrypt.jar crypto/AES.class Other/Obfuscated.class decrypt/Mai
 
 ### Get access:
 
-Now, we have decrypted passwords and logins. Don't forget about open ssh port. I used `hydra` to bruteforce ssh login.
+Now, we have decrypted passwords and logins. Don't forget about the open ssh port. I used `hydra` to brute-force ssh login.
 ```
 hydra -L logins.txt -P passwords.txt -o found.txt 192.168.88.226 ssh
 ```
