@@ -17,8 +17,8 @@ nmap -sV -O -T4 -p21,22,5000 192.168.88.226 -oA services
 
 ### ftp
 
-On ftp we have an anonymous login. Also we can download all files in pub directory.
-There are one note.txt and one jar file. Note says that jar file is used to encrypt password.
+On ftp we have an anonymous login. Also, we can download all files in the pub directory.
+There are one note.txt and one jar file. The note says that jar file is used to encrypt the password.
 ```
 jar xf warzone-encrypt.jar
 ```
@@ -36,7 +36,7 @@ Other/
 
 	Obfuscated.class 
 
-I used java decompiler to get source code.
+I used java decompiler to get the source code.
 
 In Main it just encrypts the password with AES from AES source. But AES has interesting methods...
 
@@ -47,7 +47,7 @@ Obfuscated:
 ![obfuscated](screenshots/obfuscated.png)
 
 Thus, secrets are not secrets anymore :)
-We can easy decrypt the passwords, but need some java coding, just a little.
+We can easily decrypt the passwords, but need some java coding, just a little.
 By the way, what passwords need to be decrypted???
 
 ### port 5000 or web
@@ -58,7 +58,7 @@ Nothing interesting there, but in page source you can see next:
 ```
 <!--GA DIE UHCEETASTTRNL-->
 ```
-From main page we see that it can be some cipher. [cipher identifier tool](https://www.boxentriq.com/code-breaking/cipher-identifier#railfence-cipher "https://www.boxentriq.com/code-breaking/cipher-identifier#railfence-cipher")
+From main page, we see that it can be some cipher. [cipher identifier tool](https://www.boxentriq.com/code-breaking/cipher-identifier#railfence-cipher "https://www.boxentriq.com/code-breaking/cipher-identifier#railfence-cipher")
 
 It is a `Railfence Cipher`. Decrypted:
 ```
@@ -78,7 +78,7 @@ But we need a PIN that shows on server side...
 
 ## Threat modelling
 
-Okay. We have a java source code of encryption, we have a wierd decrypted message with words "credentials" and "auth". So it is difinitely what we need. Another general thing is services versions! Maybe we will have a CVE on it.
+Okay. We have a java source code of encryption, we have a weird decrypted message with the words "credentials" and "auth". So it is definitely what we need. Another general thing is services versions! Maybe we will have a CVE on it.
 
 ## Vulnerability analysis
 
@@ -96,7 +96,7 @@ Vulnerable. For me it doesn't work (`/usr/share/exploitdb/exploits/multiple/remo
 
 ### Credentials leakage:
 
-One main vulnerability here is comment within page source, i think, which leads right to credentials leakage. I thought for a long time what to do with decrypted message. But in the end i found a way. It is a url `http://192.168.88.226:5000/get/auth/credentials`. There you will get credentials, they are encrypted.
+One main vulnerability here is the comment within page source, i think, which leads right to credentials leakage. I thought for a long time what to do with decrypted message. But in the end, i found a way. It is a url `http://192.168.88.226:5000/get/auth/credentials`. There you will get credentials, they are encrypted.
 
 ## Exploitation
 
@@ -108,7 +108,7 @@ So, i copied AES, Obfuscated classes from decompiler, and fixed the Main class a
 
 [code here](decryption)
  
-Also i understood about java packages, how to compile java code and how to create jar files.
+Also, i understood about java packages, how to compile java code and how to create jar files.
 
 To create .class file from .java:
 ```
@@ -118,7 +118,7 @@ To create package with .class from .java:
 ```
 javac -d . source.java
 ```
-To create jar file we need a manifest in which need to specify main class:
+To create a jar file we need a manifest in which need to specify main class:
 ```
 Manifest-Version: 1.0
 Main-Class: decrypt.Main
@@ -139,12 +139,12 @@ FOUND LOGIN FOR commando! But this user doesn't have user.txt...
 
 ### Switch user:
 
-Just do `ls /home` or `cat /etc/passwd` to see another users. It is a `captain` user!
-Go to home directory of the user and we see there within `Desktop` file 'user.txt' and interesting folder '.crypt'.
+Just do `ls /home` or `cat /etc/passwd` to see other users. It is a `captain` user!
+Go to the home directory of the user and we see there within `Desktop` file 'user.txt' and interesting folder '.crypt'.
 
 ![.crypt](screenshots/crypt.png)
 
-readme.txt says that root create a tool to encrypt password for account. Source code of encrypt.py:
+readme.txt says that root creates a tool to encrypt the password for the account. Source code of encrypt.py:
 ```
 from simplecrypt import encrypt, decrypt
 import os
@@ -179,8 +179,8 @@ I didn't know about jjs before...
 
 ### jjs
 
-jjs - The Nashorn JavaScript script engine. Next, i understood that i can execute some sort of things on JavaScript.
-Main thing here is that you can write a script on JS use shebang and execute it in jjs with `jjs script.js`. I started to search how to get a shell from it and i found next solution:
+jjs - The Nashorn JavaScript script engine. Next, i understood that i can execute some sort of thing on JavaScript.
+The main thing here is that you can write a script on JS use shebang and execute it in jjs with `jjs script.js`. I started to search how to get a shell from it and i found next solution:
 
 #### GLOBAL OBJECTS!!!
 With shell scripting features enabled, Nashorn defines several global objects.
@@ -244,7 +244,7 @@ hashcat -a 0 -m 1800 root.hash your_wordlist
 
 ### Backdoor
 
-I left the ling below how to create backdoors...
+I left the link below how to create backdoors...
 
 ### Logs
 
