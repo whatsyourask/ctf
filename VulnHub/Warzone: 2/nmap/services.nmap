@@ -1,0 +1,46 @@
+# Nmap 7.91 scan initiated Sun Jan 10 08:23:54 2021 as: nmap -sV -p21,22,1337 -oA services 192.168.88.224
+Nmap scan report for 192.168.88.224
+Host is up (0.00065s latency).
+
+PORT     STATE SERVICE VERSION
+21/tcp   open  ftp     vsftpd 3.0.3
+22/tcp   open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+1337/tcp open  waste?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1337-TCP:V=7.91%I=7%D=1/10%Time=5FFAFFF0%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,4E,"#\x20WARZONE\x202\x20#\x20WARZONE\x202\x20#\x20WARZONE\x202\x20#
+SF:\n{SECRET\x20SYSTEM\x20REMOTE\x20ACCESS}\nUsername\x20:")%r(GenericLine
+SF:s,5F,"#\x20WARZONE\x202\x20#\x20WARZONE\x202\x20#\x20WARZONE\x202\x20#\
+SF:n{SECRET\x20SYSTEM\x20REMOTE\x20ACCESS}\nUsername\x20:Password\x20:Toke
+SF:n\x20:")%r(GetRequest,5F,"#\x20WARZONE\x202\x20#\x20WARZONE\x202\x20#\x
+SF:20WARZONE\x202\x20#\n{SECRET\x20SYSTEM\x20REMOTE\x20ACCESS}\nUsername\x
+SF:20:Password\x20:Token\x20:")%r(HTTPOptions,5F,"#\x20WARZONE\x202\x20#\x
+SF:20WARZONE\x202\x20#\x20WARZONE\x202\x20#\n{SECRET\x20SYSTEM\x20REMOTE\x
+SF:20ACCESS}\nUsername\x20:Password\x20:Token\x20:")%r(RTSPRequest,5F,"#\x
+SF:20WARZONE\x202\x20#\x20WARZONE\x202\x20#\x20WARZONE\x202\x20#\n{SECRET\
+SF:x20SYSTEM\x20REMOTE\x20ACCESS}\nUsername\x20:Password\x20:Token\x20:")%
+SF:r(RPCCheck,4E,"#\x20WARZONE\x202\x20#\x20WARZONE\x202\x20#\x20WARZONE\x
+SF:202\x20#\n{SECRET\x20SYSTEM\x20REMOTE\x20ACCESS}\nUsername\x20:")%r(DNS
+SF:VersionBindReqTCP,4E,"#\x20WARZONE\x202\x20#\x20WARZONE\x202\x20#\x20WA
+SF:RZONE\x202\x20#\n{SECRET\x20SYSTEM\x20REMOTE\x20ACCESS}\nUsername\x20:"
+SF:)%r(DNSStatusRequestTCP,4E,"#\x20WARZONE\x202\x20#\x20WARZONE\x202\x20#
+SF:\x20WARZONE\x202\x20#\n{SECRET\x20SYSTEM\x20REMOTE\x20ACCESS}\nUsername
+SF:\x20:")%r(Help,58,"#\x20WARZONE\x202\x20#\x20WARZONE\x202\x20#\x20WARZO
+SF:NE\x202\x20#\n{SECRET\x20SYSTEM\x20REMOTE\x20ACCESS}\nUsername\x20:Pass
+SF:word\x20:")%r(SSLSessionReq,58,"#\x20WARZONE\x202\x20#\x20WARZONE\x202\
+SF:x20#\x20WARZONE\x202\x20#\n{SECRET\x20SYSTEM\x20REMOTE\x20ACCESS}\nUser
+SF:name\x20:Password\x20:")%r(TerminalServerCookie,58,"#\x20WARZONE\x202\x
+SF:20#\x20WARZONE\x202\x20#\x20WARZONE\x202\x20#\n{SECRET\x20SYSTEM\x20REM
+SF:OTE\x20ACCESS}\nUsername\x20:Password\x20:")%r(TLSSessionReq,5F,"#\x20W
+SF:ARZONE\x202\x20#\x20WARZONE\x202\x20#\x20WARZONE\x202\x20#\n{SECRET\x20
+SF:SYSTEM\x20REMOTE\x20ACCESS}\nUsername\x20:Password\x20:Token\x20:")%r(K
+SF:erberos,58,"#\x20WARZONE\x202\x20#\x20WARZONE\x202\x20#\x20WARZONE\x202
+SF:\x20#\n{SECRET\x20SYSTEM\x20REMOTE\x20ACCESS}\nUsername\x20:Password\x2
+SF:0:")%r(SMBProgNeg,4E,"#\x20WARZONE\x202\x20#\x20WARZONE\x202\x20#\x20WA
+SF:RZONE\x202\x20#\n{SECRET\x20SYSTEM\x20REMOTE\x20ACCESS}\nUsername\x20:"
+SF:);
+MAC Address: 08:00:27:BE:0D:93 (Oracle VirtualBox virtual NIC)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan 10 08:26:31 2021 -- 1 IP address (1 host up) scanned in 157.94 seconds
