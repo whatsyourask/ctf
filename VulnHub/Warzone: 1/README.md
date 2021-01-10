@@ -251,7 +251,7 @@ I left the ling below how to create backdoors...
 U need to clean next logs:
 * auth.log - login attempts.
 * vsftpd.log - vsftpd connect and operations with files.
-* deamon.log - logs about your actions on port 5000, HTTP GET, POST, etc.
+* daemon.log - logs about your actions on port 5000, HTTP GET, POST, etc.
 
 ## Sources
 
