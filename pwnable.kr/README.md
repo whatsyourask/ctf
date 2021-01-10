@@ -28,5 +28,5 @@ challenges: [pwnable.kr](http://pwnable.kr/)
   * [x] [horcruxes](horcruxes)
 
 ## [Rookiss]
-  * [ ] [brain fuck](brain fuck)
+  * [ ] [brain fuck](brainfuck)
 
