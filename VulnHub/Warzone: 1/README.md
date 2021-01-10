@@ -96,7 +96,7 @@ Vulnerable. For me it doesn't work (`/usr/share/exploitdb/exploits/multiple/remo
 
 ### Credentials leakage:
 
-One main vulnerability here is the comment within page source, i think, which leads right to credentials leakage. I thought for a long time what to do with decrypted message. But in the end, i found a way. It is a url `http://192.168.88.226:5000/get/auth/credentials`. There you will get credentials, they are encrypted.
+The first vulnerability here is the comment within page source, i think, which leads right to credentials leakage. The second vulnerability is misconfiguration of ftp server which allows us to anonymously login and download files. I thought for a long time what to do with decrypted message. But in the end, i found a way. It is a url `http://192.168.88.226:5000/get/auth/credentials`. There you will get credentials, they are encrypted.
 
 ## Exploitation
 
