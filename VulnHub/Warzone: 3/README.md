@@ -37,11 +37,11 @@ Also, we have a client app:
 
 ### kerberos
 
-I don't know what to gather from it. Moreover, i don't want to use metasploit.
+I don't know what to gather from it. Moreover, I don't want to use metasploit.
 
 ## Threat modeling
 
-Definitly, here the attack vector is `alienclient.jar` file which we can decompile and use it with the right credential.
+Definitely, here the attack vector is `alienclient.jar` file which we can decompile and use with the right credential.
 
 ## Vulnerability analysis
 
