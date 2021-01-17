@@ -1,0 +1,5 @@
+Please your attention,
+The system for uploading and viewing reports related to aliens behavior is now live. 
+The default credentials for your entry are alienum@exogenesis, 
+your token is sha256(username). Also, do not be afraid our system is very secure.
+If you want higher privileges please contact with our boss.
