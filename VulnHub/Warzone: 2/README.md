@@ -20,7 +20,7 @@ Anonymous login is allowed.
 
 ![ftp](screenshots/ftp.png)
 
-From there we have a three pictures.
+From there we have three pictures.
 
 username:
 
@@ -34,7 +34,7 @@ token:
 
 ![token](ftp/token.PNG)
 
-I searched for cipher on the username and password pictures. And i got [flag semaphore](https://en.wikipedia.org/wiki/Flag_semaphore "https://en.wikipedia.org/wiki/Flag_semaphore").
+I searched for cipher on the username and password pictures. And I got [a flag semaphore](https://en.wikipedia.org/wiki/Flag_semaphore "https://en.wikipedia.org/wiki/Flag_semaphore").
 
 Decode the symbols from pictures and get a username and a password in `creds/`. I wrote it in upper case as wiki says.
 
@@ -46,7 +46,7 @@ I tried to take a banner:
 
 ![1337 conn](screenshots/1337_banner.png)
 
-## Threat modelling
+## Threat modeling
 
 I think that it is enough to gather. Now we have the creds and have the 1337 port with login. I believe we easily will get remote access and that's all. 
 
@@ -64,7 +64,7 @@ Not vulnerable.
 
 ### Misconfiguration of ftp
 
-The main vulnerability is this. But i don't know about backend of 1337 port. Maybe here we can also have binary vulnerabilities.
+The main vulnerability is this. But I don't know about backend of 1337 port. Maybe here we can also have binary vulnerabilities.
 
 ## Exploitation
 
