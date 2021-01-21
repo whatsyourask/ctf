@@ -99,6 +99,8 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 ```
 User - `www-data`.
 
+## Post exploitation
+
 ### ssh flagman
 
 In flagman home directory:
@@ -107,7 +109,7 @@ In flagman home directory:
 
 Now we have a good shell and ssh access.
 
-## Post exploitation
+### Explore
 
 `sudo -l` will show you admiral wrz2-app.py execute permission which is similar to the server from the previous machine Warzone 1
 ```

@@ -137,6 +137,8 @@ hydra -L logins.txt -P passwords.txt -o found.txt 192.168.88.226 ssh
 ```
 FOUND LOGIN FOR commando! But this user doesn't have user.txt...
 
+## Post exploitation
+
 ### Switch user:
 
 Just do `ls /home` or `cat /etc/passwd` to see other users. It is a `captain` user!
@@ -168,7 +170,7 @@ print(plaintext)
 ```
 Now, we have a captain and user.txt.
 
-## Post exploitation
+## Privilege escalation
 
 Time to do privilege escalation!
 
