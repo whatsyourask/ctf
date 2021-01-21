@@ -37,15 +37,15 @@ Also, we have a client app:
 
 ### kerberos
 
-I don't know what to gather from it. Moreover, I don't want to use metasploit.
+I don't know what to gather from it. Moreover, I don't want to use Metasploit.
 
 ## Threat modeling
 
-Definitely, here the attack vector is `alienclient.jar` file which we can decompile and use with the right credential.
+Here the attack vector is the `alienclient.jar` file which we can decompile and use with the right credential.
 
 ## Vulnerability analysis
 
-Again, here is information leakage through misconfiguration of ftp. It gives us an ability to modify client-side application. That leads to remote code execution.
+Again, here is information leakage through the misconfiguration of ftp. It gives us the ability to modify the client-side application. That leads to remote code execution.
 
 ## Exploitation
 
@@ -64,15 +64,15 @@ Compile it with `javac -d . source.java`. And we got a shell as "exomorph" user.
 
 ### Explore
 
-An user "exomorph" has in his home directory 'encryptor' and encrypted file.But I can't decompile the program from shell. So I copied binary to my machine with `cat wrz3encryptor.jar | base64`.
+A user "exomorph" has in his home directory 'encryptor' and encrypted file. But I can't decompile the program from the shell. So I copied the binary to my machine with `cat wrz3encryptor.jar | base64`.
 
-### Decryption of the aliens
+### The decryption of the aliens
 
-Decompile the jar and create a new package, change mode to `Cipher.DECRYPT_MODE`. Got `aliens.txt`. 
+Decompile the jar and create a new package, change the mode to `Cipher.DECRYPT_MODE`. Got `aliens.txt`. 
 
 ### ssh
 
-While I was in exomorph shell, I did `ls` in home dir and saw an user `anunnaki`. There are 3 passwords for this user. Got the anunnaki shell.
+While I was in exomorph shell, I did `ls` in home dir and saw a user `anunnaki`. There are 3 passwords for this user. Got the anunnaki shell.
 
 ### gpg
 
