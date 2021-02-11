@@ -1,0 +1,171 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb.txt
+START_TIME: Thu Feb 11 13:36:20 2021
+URL_BASE: http://192.168.88.222/
+WORDLIST_FILES: /usr/share/wordlists/dirb/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://192.168.88.222/ ----
+==> DIRECTORY: http://192.168.88.222/admin/
+==> DIRECTORY: http://192.168.88.222/calendar/
++ http://192.168.88.222/cgi-bin/ (CODE:403|SIZE:289)
++ http://192.168.88.222/conf (CODE:500|SIZE:617)
+==> DIRECTORY: http://192.168.88.222/images/
+==> DIRECTORY: http://192.168.88.222/inc/
+==> DIRECTORY: http://192.168.88.222/mail/
+==> DIRECTORY: http://192.168.88.222/pages/
++ http://192.168.88.222/restricted (CODE:401|SIZE:480)
++ http://192.168.88.222/robots.txt (CODE:200|SIZE:104)
+==> DIRECTORY: http://192.168.88.222/sql/
+==> DIRECTORY: http://192.168.88.222/usage/
+
+---- Entering directory: http://192.168.88.222/admin/ ----
+==> DIRECTORY: http://192.168.88.222/admin/inc/
+
+---- Entering directory: http://192.168.88.222/calendar/ ----
++ http://192.168.88.222/calendar/README (CODE:200|SIZE:552)
++ http://192.168.88.222/calendar/TODO (CODE:200|SIZE:783)
+==> DIRECTORY: http://192.168.88.222/calendar/adodb/
+==> DIRECTORY: http://192.168.88.222/calendar/includes/
+==> DIRECTORY: http://192.168.88.222/calendar/locale/
+
+---- Entering directory: http://192.168.88.222/images/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://192.168.88.222/inc/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://192.168.88.222/mail/ ----
++ http://192.168.88.222/mail/ChangeLog (CODE:200|SIZE:87043)
++ http://192.168.88.222/mail/README (CODE:200|SIZE:3214)
+==> DIRECTORY: http://192.168.88.222/mail/class/
+==> DIRECTORY: http://192.168.88.222/mail/config/
++ http://192.168.88.222/mail/configure (CODE:200|SIZE:102)
+==> DIRECTORY: http://192.168.88.222/mail/contrib/
++ http://192.168.88.222/mail/data (CODE:403|SIZE:290)
+==> DIRECTORY: http://192.168.88.222/mail/doc/
+==> DIRECTORY: http://192.168.88.222/mail/functions/
+==> DIRECTORY: http://192.168.88.222/mail/help/
+==> DIRECTORY: http://192.168.88.222/mail/images/
+==> DIRECTORY: http://192.168.88.222/mail/include/
+==> DIRECTORY: http://192.168.88.222/mail/locale/
+==> DIRECTORY: http://192.168.88.222/mail/plugins/
+==> DIRECTORY: http://192.168.88.222/mail/po/
+==> DIRECTORY: http://192.168.88.222/mail/src/
+==> DIRECTORY: http://192.168.88.222/mail/themes/
+
+---- Entering directory: http://192.168.88.222/pages/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://192.168.88.222/sql/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://192.168.88.222/usage/ ----
+
+---- Entering directory: http://192.168.88.222/admin/inc/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://192.168.88.222/calendar/adodb/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://192.168.88.222/calendar/includes/ ----
+
+---- Entering directory: http://192.168.88.222/calendar/locale/ ----
+==> DIRECTORY: http://192.168.88.222/calendar/locale/de/
+==> DIRECTORY: http://192.168.88.222/calendar/locale/de_DE/
+
+---- Entering directory: http://192.168.88.222/mail/class/ ----
+==> DIRECTORY: http://192.168.88.222/mail/class/deliver/
+==> DIRECTORY: http://192.168.88.222/mail/class/helper/
+==> DIRECTORY: http://192.168.88.222/mail/class/mime/
+
+---- Entering directory: http://192.168.88.222/mail/config/ ----
+
+---- Entering directory: http://192.168.88.222/mail/contrib/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://192.168.88.222/mail/doc/ ----
+
+---- Entering directory: http://192.168.88.222/mail/functions/ ----
+==> DIRECTORY: http://192.168.88.222/mail/functions/decode/
+==> DIRECTORY: http://192.168.88.222/mail/functions/encode/
+
+---- Entering directory: http://192.168.88.222/mail/help/ ----
+==> DIRECTORY: http://192.168.88.222/mail/help/en_US/
+
+---- Entering directory: http://192.168.88.222/mail/images/ ----
+
+---- Entering directory: http://192.168.88.222/mail/include/ ----
+==> DIRECTORY: http://192.168.88.222/mail/include/options/
+
+---- Entering directory: http://192.168.88.222/mail/locale/ ----
+
+---- Entering directory: http://192.168.88.222/mail/plugins/ ----
+==> DIRECTORY: http://192.168.88.222/mail/plugins/administrator/
+==> DIRECTORY: http://192.168.88.222/mail/plugins/bug_report/
+==> DIRECTORY: http://192.168.88.222/mail/plugins/calendar/
+==> DIRECTORY: http://192.168.88.222/mail/plugins/demo/
+==> DIRECTORY: http://192.168.88.222/mail/plugins/filters/
+==> DIRECTORY: http://192.168.88.222/mail/plugins/fortune/
+==> DIRECTORY: http://192.168.88.222/mail/plugins/info/
+==> DIRECTORY: http://192.168.88.222/mail/plugins/test/
+==> DIRECTORY: http://192.168.88.222/mail/plugins/translate/
+
+---- Entering directory: http://192.168.88.222/mail/po/ ----
+
+---- Entering directory: http://192.168.88.222/mail/src/ ----
+
+---- Entering directory: http://192.168.88.222/mail/themes/ ----
+==> DIRECTORY: http://192.168.88.222/mail/themes/css/
+
+---- Entering directory: http://192.168.88.222/calendar/locale/de/ ----
+
+---- Entering directory: http://192.168.88.222/calendar/locale/de_DE/ ----
+
+---- Entering directory: http://192.168.88.222/mail/class/deliver/ ----
+
+---- Entering directory: http://192.168.88.222/mail/class/helper/ ----
+
+---- Entering directory: http://192.168.88.222/mail/class/mime/ ----
+
+---- Entering directory: http://192.168.88.222/mail/functions/decode/ ----
+
+---- Entering directory: http://192.168.88.222/mail/functions/encode/ ----
+
+---- Entering directory: http://192.168.88.222/mail/help/en_US/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://192.168.88.222/mail/include/options/ ----
+
+---- Entering directory: http://192.168.88.222/mail/plugins/administrator/ ----
+
+---- Entering directory: http://192.168.88.222/mail/plugins/bug_report/ ----
++ http://192.168.88.222/mail/plugins/bug_report/README (CODE:200|SIZE:2335)
+
+---- Entering directory: http://192.168.88.222/mail/plugins/calendar/ ----
++ http://192.168.88.222/mail/plugins/calendar/README (CODE:200|SIZE:887)
+
+---- Entering directory: http://192.168.88.222/mail/plugins/demo/ ----
++ http://192.168.88.222/mail/plugins/demo/README (CODE:200|SIZE:837)
+
+---- Entering directory: http://192.168.88.222/mail/plugins/filters/ ----
++ http://192.168.88.222/mail/plugins/filters/README (CODE:200|SIZE:2672)
+
+---- Entering directory: http://192.168.88.222/mail/plugins/fortune/ ----
++ http://192.168.88.222/mail/plugins/fortune/README (CODE:200|SIZE:485)
