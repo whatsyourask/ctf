@@ -1,0 +1,15 @@
+# Nmap 7.91 scan initiated Fri Feb 12 07:40:50 2021 as: nmap --script smtp-enum-users -oA enum_users 192.168.88.222
+Nmap scan report for ctf4.sas.upenn.edu (192.168.88.222)
+Host is up (0.00032s latency).
+Not shown: 996 filtered ports
+PORT    STATE  SERVICE
+22/tcp  open   ssh
+25/tcp  open   smtp
+| smtp-enum-users: 
+|   Method VRFY returned a unhandled status code.
+|_  Method EXPN returned a unhandled status code.
+80/tcp  open   http
+631/tcp closed ipp
+MAC Address: 00:0C:29:A2:D2:33 (VMware)
+
+# Nmap done at Fri Feb 12 07:40:57 2021 -- 1 IP address (1 host up) scanned in 6.70 seconds
