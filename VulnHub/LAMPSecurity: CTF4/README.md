@@ -174,17 +174,27 @@ Then `john` will easily crack the hashes. `ssh sorzek@192.168.88.222 -o KexAlgor
 
 ## Post exploitation
 
-Logins and enumeration:
+### Enumeration 
 
 * sorzek - nothing.
 
 * dstevens - nothing. But actually has information in the mail folder. Talk about passwords "password1234" and "undone".
 
+### MySQL stored hashes
+
 * pmoore - has access to MySQL with `mysql -u root -p` and password `database`. So, next, I did:
+
 ```sql
 use ehks;
 show tables;
 select * from user;
 ```
-And got all the md5 hashes. The next step is to crack them all.
+And got all the md5 hashes. The next step is to crack them all. `john the reaper` didn't work...[crack hashes](https://crackstation.net/ "https://crackstation.net/"). 
 
+### Access to .ssh folder of user achen
+
+`cat /home/achen/.ssh/achen_priv.ppk` will show you private key from putty. Download `puttygen.exe` and use `wine`. Copy priv. key to your machine. But my `puttygen.exe` generated a bad key, I couldn't log in. So, I just used the previous way.
+
+### Privilege Escalation
+
+`ssh achen@192.168.88.222` with password `seventysixers`. Then `sudo -l` will show you that you can just `sudo su` and get root.
