@@ -1,0 +1,50 @@
+# Nmap 7.91 scan initiated Sun Feb 14 12:43:03 2021 as: nmap -p445 --script=smb-enum-* -oA enum 192.168.88.220
+Nmap scan report for 192.168.88.220
+Host is up (0.00056s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+MAC Address: 00:0C:29:37:93:91 (VMware)
+
+Host script results:
+| smb-enum-domains: 
+|   Builtin
+|     Groups: n/a
+|     Users: n/a
+|     Creation time: unknown
+|     Passwords: min length: 5; min age: n/a days; max age: n/a days; history: n/a passwords
+|     Account lockout disabled
+|   LOCALHOST
+|     Groups: n/a
+|     Users: loren\x00, jennifer\x00, amy\x00, andy\x00, patrick\x00
+|     Creation time: unknown
+|     Passwords: min length: 5; min age: n/a days; max age: n/a days; history: n/a passwords
+|_    Account lockout disabled
+|_smb-enum-sessions: ERROR: Script execution failed (use -d to debug)
+| smb-enum-shares: 
+|   account_used: <blank>
+|   \\192.168.88.220\IPC$: 
+|     Type: STYPE_IPC_HIDDEN
+|     Comment: IPC Service (Samba Server Version 3.0.26a-6.fc8)
+|     Users: 2
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|_    Anonymous access: READ/WRITE
+| smb-enum-users: 
+|   LOCALHOST\amy (RID: 2008)
+|     Full name:   Amy Pendelton
+|     Flags:       Normal user account
+|   LOCALHOST\andy (RID: 2004)
+|     Full name:   Andrew Carp
+|     Flags:       Normal user account
+|   LOCALHOST\jennifer (RID: 2002)
+|     Full name:   Jennifer Sea
+|     Flags:       Normal user account
+|   LOCALHOST\loren (RID: 2006)
+|     Full name:   Loren Felt
+|     Flags:       Normal user account
+|   LOCALHOST\patrick (RID: 2000)
+|     Full name:   Patrick Fair
+|_    Flags:       Normal user account
+
+# Nmap done at Sun Feb 14 12:50:04 2021 -- 1 IP address (1 host up) scanned in 420.41 seconds

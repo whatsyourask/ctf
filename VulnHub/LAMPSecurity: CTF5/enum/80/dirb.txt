@@ -1,0 +1,198 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb.txt
+START_TIME: Sun Feb 14 11:49:09 2021
+URL_BASE: http://192.168.88.220/
+WORDLIST_FILES: /usr/share/wordlists/dirb/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://192.168.88.220/ ----
++ http://192.168.88.220/awstatsicons (CODE:403|SIZE:293)
++ http://192.168.88.220/cgi-bin/ (CODE:403|SIZE:289)
+==> DIRECTORY: http://192.168.88.220/events/
+==> DIRECTORY: http://192.168.88.220/inc/
+==> DIRECTORY: http://192.168.88.220/list/
+==> DIRECTORY: http://192.168.88.220/mail/
+==> DIRECTORY: http://192.168.88.220/phpmyadmin/
+==> DIRECTORY: http://192.168.88.220/squirrelmail/
++ http://192.168.88.220/~operator (CODE:403|SIZE:290)
++ http://192.168.88.220/~root (CODE:403|SIZE:286)
+
+---- Entering directory: http://192.168.88.220/events/ ----
++ http://192.168.88.220/events/.profile (CODE:403|SIZE:296)
++ http://192.168.88.220/events/0 (CODE:200|SIZE:10484)
++ http://192.168.88.220/events/Root (CODE:403|SIZE:292)
++ http://192.168.88.220/events/admin (CODE:403|SIZE:7943)
++ http://192.168.88.220/events/blog (CODE:200|SIZE:8930)
++ http://192.168.88.220/events/contact (CODE:200|SIZE:8081)
++ http://192.168.88.220/events/event (CODE:200|SIZE:13264)
+==> DIRECTORY: http://192.168.88.220/events/files/
++ http://192.168.88.220/events/frontpage (CODE:200|SIZE:10193)
+==> DIRECTORY: http://192.168.88.220/events/includes/
++ http://192.168.88.220/events/logout (CODE:403|SIZE:7857)
+==> DIRECTORY: http://192.168.88.220/events/misc/
+==> DIRECTORY: http://192.168.88.220/events/modules/
++ http://192.168.88.220/events/node (CODE:200|SIZE:10484)
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb.txt
+START_TIME: Sun Feb 14 13:02:47 2021
+URL_BASE: http://192.168.88.220/
+WORDLIST_FILES: /usr/share/wordlists/dirb/vulns/apache.txt
+
+-----------------
+
+GENERATED WORDS: 30
+
+---- Scanning URL: http://192.168.88.220/ ----
++ http://192.168.88.220/~root (CODE:403|SIZE:286)
+
+-----------------
+END_TIME: Sun Feb 14 13:02:47 2021
+DOWNLOADED: 30 - FOUND: 1
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb.txt
+START_TIME: Sun Feb 14 13:03:08 2021
+URL_BASE: http://192.168.88.220/
+WORDLIST_FILES: /usr/share/wordlists/dirb/others/best1050.txt
+
+-----------------
+
+GENERATED WORDS: 1049
+
+---- Scanning URL: http://192.168.88.220/ ----
+
+-----------------
+END_TIME: Sun Feb 14 13:03:10 2021
+DOWNLOADED: 1049 - FOUND: 0
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb.txt
+START_TIME: Sun Feb 14 13:03:17 2021
+URL_BASE: http://192.168.88.220/
+WORDLIST_FILES: /usr/share/wordlists/dirb/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://192.168.88.220/ ----
++ http://192.168.88.220/~operator (CODE:403|SIZE:290)
++ http://192.168.88.220/~root (CODE:403|SIZE:286)
++ http://192.168.88.220/cgi-bin/ (CODE:403|SIZE:289)
+==> DIRECTORY: http://192.168.88.220/events/
+==> DIRECTORY: http://192.168.88.220/inc/
++ http://192.168.88.220/index.php (CODE:200|SIZE:1538)
++ http://192.168.88.220/info.php (CODE:200|SIZE:50551)
+==> DIRECTORY: http://192.168.88.220/list/
+==> DIRECTORY: http://192.168.88.220/mail/
+==> DIRECTORY: http://192.168.88.220/phpmyadmin/
+==> DIRECTORY: http://192.168.88.220/squirrelmail/
+
+---- Entering directory: http://192.168.88.220/events/ ----
++ http://192.168.88.220/events/.profile (CODE:403|SIZE:296)
++ http://192.168.88.220/events/0 (CODE:200|SIZE:10484)
++ http://192.168.88.220/events/admin (CODE:403|SIZE:7943)
++ http://192.168.88.220/events/blog (CODE:200|SIZE:8930)
++ http://192.168.88.220/events/contact (CODE:200|SIZE:8081)
++ http://192.168.88.220/events/event (CODE:200|SIZE:13263)
+==> DIRECTORY: http://192.168.88.220/events/files/
++ http://192.168.88.220/events/frontpage (CODE:200|SIZE:10193)
+==> DIRECTORY: http://192.168.88.220/events/includes/
++ http://192.168.88.220/events/index.php (CODE:200|SIZE:10484)
++ http://192.168.88.220/events/install.mysql (CODE:403|SIZE:301)
++ http://192.168.88.220/events/install.pgsql (CODE:403|SIZE:301)
++ http://192.168.88.220/events/logout (CODE:403|SIZE:7857)
+==> DIRECTORY: http://192.168.88.220/events/misc/
+==> DIRECTORY: http://192.168.88.220/events/modules/
++ http://192.168.88.220/events/node (CODE:200|SIZE:10484)
+==> DIRECTORY: http://192.168.88.220/events/profiles/
++ http://192.168.88.220/events/robots.txt (CODE:200|SIZE:1632)
++ http://192.168.88.220/events/Root (CODE:403|SIZE:292)
+==> DIRECTORY: http://192.168.88.220/events/scripts/
++ http://192.168.88.220/events/search (CODE:403|SIZE:7857)
+==> DIRECTORY: http://192.168.88.220/events/sites/
+==> DIRECTORY: http://192.168.88.220/events/themes/
++ http://192.168.88.220/events/tracker (CODE:200|SIZE:9739)
++ http://192.168.88.220/events/user (CODE:200|SIZE:7911)
++ http://192.168.88.220/events/xmlrpc.php (CODE:200|SIZE:42)
+
+---- Entering directory: http://192.168.88.220/inc/ ----
++ http://192.168.88.220/inc/index.php (CODE:200|SIZE:426)
+
+---- Entering directory: http://192.168.88.220/list/ ----
++ http://192.168.88.220/list/index.php (CODE:200|SIZE:791)
+
+---- Entering directory: http://192.168.88.220/mail/ ----
+==> DIRECTORY: http://192.168.88.220/mail/class/
+==> DIRECTORY: http://192.168.88.220/mail/config/
+==> DIRECTORY: http://192.168.88.220/mail/functions/
+==> DIRECTORY: http://192.168.88.220/mail/help/
+==> DIRECTORY: http://192.168.88.220/mail/images/
+==> DIRECTORY: http://192.168.88.220/mail/include/
++ http://192.168.88.220/mail/index.php (CODE:302|SIZE:0)
+==> DIRECTORY: http://192.168.88.220/mail/locale/
+==> DIRECTORY: http://192.168.88.220/mail/plugins/
+==> DIRECTORY: http://192.168.88.220/mail/src/
+==> DIRECTORY: http://192.168.88.220/mail/themes/
+
+---- Entering directory: http://192.168.88.220/phpmyadmin/ ----
++ http://192.168.88.220/phpmyadmin/ChangeLog (CODE:200|SIZE:22676)
+==> DIRECTORY: http://192.168.88.220/phpmyadmin/contrib/
++ http://192.168.88.220/phpmyadmin/favicon.ico (CODE:200|SIZE:18902)
++ http://192.168.88.220/phpmyadmin/index.php (CODE:200|SIZE:8457)
+==> DIRECTORY: http://192.168.88.220/phpmyadmin/js/
+==> DIRECTORY: http://192.168.88.220/phpmyadmin/lang/
++ http://192.168.88.220/phpmyadmin/libraries (CODE:403|SIZE:301)
++ http://192.168.88.220/phpmyadmin/LICENSE (CODE:200|SIZE:18011)
++ http://192.168.88.220/phpmyadmin/phpinfo.php (CODE:200|SIZE:0)
++ http://192.168.88.220/phpmyadmin/README (CODE:200|SIZE:2624)
++ http://192.168.88.220/phpmyadmin/robots.txt (CODE:200|SIZE:26)
+==> DIRECTORY: http://192.168.88.220/phpmyadmin/scripts/
+==> DIRECTORY: http://192.168.88.220/phpmyadmin/setup/
+==> DIRECTORY: http://192.168.88.220/phpmyadmin/themes/
++ http://192.168.88.220/phpmyadmin/TODO (CODE:200|SIZE:235)
+
+---- Entering directory: http://192.168.88.220/squirrelmail/ ----
+==> DIRECTORY: http://192.168.88.220/squirrelmail/class/
+==> DIRECTORY: http://192.168.88.220/squirrelmail/config/
+==> DIRECTORY: http://192.168.88.220/squirrelmail/functions/
+==> DIRECTORY: http://192.168.88.220/squirrelmail/help/
+==> DIRECTORY: http://192.168.88.220/squirrelmail/images/
+==> DIRECTORY: http://192.168.88.220/squirrelmail/include/
++ http://192.168.88.220/squirrelmail/index.php (CODE:302|SIZE:0)
+==> DIRECTORY: http://192.168.88.220/squirrelmail/locale/
+==> DIRECTORY: http://192.168.88.220/squirrelmail/plugins/
+==> DIRECTORY: http://192.168.88.220/squirrelmail/src/
+==> DIRECTORY: http://192.168.88.220/squirrelmail/themes/
+
+---- Entering directory: http://192.168.88.220/events/files/ ----
++ http://192.168.88.220/events/files/.profile (CODE:403|SIZE:302)
++ http://192.168.88.220/events/files/install.mysql (CODE:403|SIZE:307)
++ http://192.168.88.220/events/files/install.pgsql (CODE:403|SIZE:307)
++ http://192.168.88.220/events/files/Root (CODE:403|SIZE:298)
+
+---- Entering directory: http://192.168.88.220/events/includes/ ----
++ http://192.168.88.220/events/includes/.profile (CODE:403|SIZE:305)
++ http://192.168.88.220/events/includes/install.mysql (CODE:403|SIZE:310)
++ http://192.168.88.220/events/includes/install.pgsql (CODE:403|SIZE:310)
