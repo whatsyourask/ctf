@@ -9,4 +9,4 @@
 
 ## Events:
 
-1. [Syskron Security CTF 2020](/Syskron\ Security\ CTF\ 2020 "https://github.com/whatsyourask/ctf-writeups/tree/main/Syskron%20Security%20CTF%202020")
+1. [Syskron Security CTF 2020](https://github.com/whatsyourask/ctf-writeups/tree/main/Syskron%20Security%20CTF%202020 "https://github.com/whatsyourask/ctf-writeups/tree/main/Syskron%20Security%20CTF%202020")
