@@ -2,9 +2,7 @@ from Crypto.PublicKey import RSA
 import base64
 import requests
 import re
-from Crypto.Cipher import PKCS1_OAEP
 import gmpy
-import binascii
 
 
 def get_req(url, param, data):
