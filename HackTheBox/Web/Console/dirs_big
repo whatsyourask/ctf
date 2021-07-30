@@ -1,0 +1,10 @@
+403        9l       28w      281c http://46.101.23.188:32738/.htaccess
+403        9l       28w      281c http://46.101.23.188:32738/.htaccess.php
+403        9l       28w      281c http://46.101.23.188:32738/.htaccess.txt
+403        9l       28w      281c http://46.101.23.188:32738/.htaccess.sh
+403        9l       28w      281c http://46.101.23.188:32738/.htpasswd
+403        9l       28w      281c http://46.101.23.188:32738/.htpasswd.php
+403        9l       28w      281c http://46.101.23.188:32738/.htpasswd.txt
+403        9l       28w      281c http://46.101.23.188:32738/.htpasswd.sh
+200       62l      403w        0c http://46.101.23.188:32738/index.php
+403        9l       28w      281c http://46.101.23.188:32738/server-status
