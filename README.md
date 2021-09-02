@@ -7,6 +7,7 @@
 3. [pwnable.kr](/pwnable.kr "https://github.com/whatsyourask/ctf/tree/main/pwnable.kr")
 4. [pwnable.tw](/pwnable.tw "https://github.com/whatsyourask/ctf/tree/main/pwnable.tw")
 5. [HackTheBox challenges](/HackTheBox "https://github.com/whatsyourask/ctf/tree/main/HackTheBox")
+6. [CryptoHack](/CryptoHack "https://github.com/whatsyourask/ctf/tree/main/CryptoHack")
 
 ## Events:
 
