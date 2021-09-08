@@ -1,8 +1,12 @@
 from pwn import *
 import json
+import os
 
+# Found the solution here: https://github.com/JesseEmond/matasano-cryptopals#set-5-diffie-hellman-and-friends
 
 con = remote('socket.cryptohack.org', 13371)
+
+# Intercept data from Alice
 print(con.read().decode())
 alice_data = con.read().decode()
 closed = alice_data.find('}')
@@ -11,20 +15,19 @@ print(alice_data)
 alice_data = json.loads(alice_data)
 p = alice_data['p']
 g = alice_data['g']
-A = alice_data['A']
 
+# Create wrong data for Bob from Alice
 data = {}
 data["p"] = p
 data["g"] = g
-int_a = int(A, 16) // 2
-int_g = int(g, 16)
-int_p = int(p, 16)
-new_A = pow(int_g, int_a, int_p)
-data["A"] = hex(new_A)
+# Replaced A with p which gives us the next case:
+# Bob will calculate p ^ b mod p = 0 
+data["A"] = p
 data = str(data).replace('\'', '"')
 print(data)
 con.send(data.encode())
 
+# Intercept data from Bob
 print(con.recv().decode())
 bob_data = con.recv().decode()
 closed = bob_data.find('}')
@@ -32,13 +35,16 @@ bob_data = bob_data[:closed + 1]
 print(bob_data)
 bob_data = json.loads(bob_data)
 B = bob_data['B']
-int_b = int(B, 16) // 2
-new_b = pow(int_g, int_b, int_p)
 data = {}
-data["B"] = hex(int_b)
+# Again replace B with p and the Alice will calculate: p ^ a mod p = 0
+data["B"] = p
 data = str(data).replace('\'', '"')
 print(data)
 con.send(data.encode())
 print(con.recv())
-print(con.recv())
-print("Shared secret: ", pow(int(B, 16), int_a, int_p))
+
+flag = con.recv()
+flag = json.loads(flag)
+print(flag)
+print("Shared secret: ", 0)
+os.system(f'python3 decrypt.py 0 {flag["iv"]} {flag["encrypted_flag"]}')
