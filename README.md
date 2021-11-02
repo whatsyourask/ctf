@@ -13,3 +13,4 @@
 
 1. [Syskron Security CTF 2020](https://github.com/whatsyourask/ctf/tree/main/Syskron%20Security%20CTF%202020 "https://github.com/whatsyourask/ctf/tree/main/Syskron%20Security%20CTF%202020")
 2. [Bsides Jeddah 2021](https://github.com/whatsyourask/ctf/tree/main/Bsides%20Jeddah%202021 "https://github.com/whatsyourask/ctf/tree/main/Bsides%20Jeddah%202021") 
+3. [Killer Queen CTF 2021](https://github.com/whatsyourask/ctf/tree/main/Killer%20Queen%20CTF%202021 "https://github.com/whatsyourask/ctf/tree/main/Killer%20Queen%20CTF%202021") 
