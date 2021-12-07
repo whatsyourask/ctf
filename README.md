@@ -16,3 +16,4 @@
 3. [Killer Queen CTF 2021](https://github.com/whatsyourask/ctf/tree/main/Killer%20Queen%20CTF%202021 "https://github.com/whatsyourask/ctf/tree/main/Killer%20Queen%20CTF%202021") 
 4. [DamCTF 2021](https://github.com/whatsyourask/ctf/tree/main/DamCTF%202021 "https://github.com/whatsyourask/ctf/tree/main/DamCTF%202021") 
 5. [HackTheBox CTF: Cyber Santa is Coming to Town](https://github.com/whatsyourask/ctf/tree/main/HackTheBox%20CTF/Cyber%20Santa%20is%20Coming%20to%20Town "https://github.com/whatsyourask/ctf/tree/main/HackTheBox%20CTF/Cyber%20Santa%20is%20Coming%20to%20Town")
+6. [2021 Metasploit community CTF](https://github.com/whatsyourask/ctf/tree/main/2021%20Metasploit%20community%20CTF "https://github.com/whatsyourask/ctf/tree/main/2021%20Metasploit%20community%20CTF")
